@@ -3,8 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        "parseDomain": "./lib/parseDomain.js",
-        "parseDomain.min": "./lib/parseDomain.js"
+        "parseDomain.min": "./lib/parseDomain.js",
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
