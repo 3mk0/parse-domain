@@ -2,7 +2,7 @@
   "name": "parse-domain",
   "version": "2.1.2",
   "description": "Splits an url into sub-domain, domain and effective top-level-domain",
-  "main": "./dist/parseDomain.js",
+  "main": "./dist/parseDomain.min.js",
   "scripts": {
     "test": "nyc mocha -R spec",
     "posttest": "eslint lib test",
