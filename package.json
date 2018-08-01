@@ -1,0 +1,59 @@
+{
+  "name": "parse-domain",
+  "version": "2.1.2",
+  "description": "Splits an url into sub-domain, domain and effective top-level-domain",
+  "main": "./dist/parseDomain.js",
+  "scripts": {
+    "test": "nyc mocha -R spec",
+    "posttest": "eslint lib test",
+    "postinstall": "node scripts/build-tries.js",
+    "prepare": "node scripts/write-pre.js",
+    "release": "standard-version",
+    "build": "webpack -p --progress --colors",
+    "dev": "webpack --progress --colors --watch"
+  },
+  "keywords": [
+    "domain",
+    "url",
+    "sub-domain",
+    "tld",
+    "parse",
+    "extract",
+    "sanitize",
+    "country",
+    "top-level"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerigon/parse-domain.git"
+  },
+  "author": "peerigon <developers@peerigon.com>",
+  "license": "Unlicense",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "fs-copy-file-sync": "^1.1.1",
+    "got": "^8.3.2",
+    "mkdirp": "^0.5.1",
+    "mocha": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-peerigon": "^12.0.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsdoc": "^3.7.1",
+    "nyc": "^11.9.0",
+    "standard-version": "^4.4.0",
+    "webpack": "^3.12.0"
+  },
+  "files": [
+    "lib",
+    "scripts",
+    "lists",
+    "test",
+    "build"
+  ]
+}
