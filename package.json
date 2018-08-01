@@ -54,6 +54,7 @@
     "scripts",
     "lists",
     "test",
-    "build"
+    "build",
+    "dist"
   ]
 }
